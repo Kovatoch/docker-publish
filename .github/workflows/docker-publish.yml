@@ -98,5 +98,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: test
-        run: docker run kovatoch/docker-publish:main
+        run: docker run ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main
     
