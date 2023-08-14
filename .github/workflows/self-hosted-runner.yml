@@ -8,7 +8,5 @@ jobs:
     steps:
       - name: Checkout the code
         uses: actions/checkout@v2
-      - name: Set the script to executable
-        run: ICACLS ./connect-to-internal-service.py /grant:x
       - name: Run the script
         run: echo "Hello Self running server"
