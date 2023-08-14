@@ -9,4 +9,4 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
       - name: Run the script
-        run: echo "Hello Self running server"
+        run: python ./connect-to-internal-service.py
