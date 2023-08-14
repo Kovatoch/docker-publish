@@ -9,6 +9,6 @@ jobs:
       - name: Checkout the code
         uses: actions/checkout@v2
       - name: Set the script to executable
-        run: chmod +x ./connect-to-internal-service.py
+        run: ICACLS ./connect-to-internal-service.py /grant:x
       - name: Run the script
         run: ./connect-to-internal-service.py
