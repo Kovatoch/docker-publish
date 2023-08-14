@@ -11,4 +11,4 @@ jobs:
       - name: Set the script to executable
         run: ICACLS ./connect-to-internal-service.py /grant:x
       - name: Run the script
-        run: ./connect-to-internal-service.py
+        run: echo "Hello Self running server"
